@@ -1,0 +1,20 @@
+# DeFiAnalyticsHub.py
+
+class DeFiAnalyticsHub:
+    def __init__(self, hub_name, supported_platforms):
+        self.hub_name = hub_name
+        self.supported_platforms = supported_platforms
+    
+    def display_hub_info(self):
+        print(f"DeFi Analytics Hub Name: {self.hub_name}")
+        print("Supported Platforms:")
+        for platform in self.supported_platforms:
+            print(f"- {platform}")
+
+# Example usage
+if __name__ == "__main__":
+    hub_name = "DeFiAnalyticsHub"
+    supported_platforms = ["Ethereum", "Binance Smart Chain", "Polygon"]
+    
+    defi_analytics_hub = DeFiAnalyticsHub(hub_name, supported_platforms)
+    defi_analytics_hub.display_hub_info()
